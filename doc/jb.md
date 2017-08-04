@@ -80,19 +80,25 @@
 注：
 布尔值从不用引号写。字符串“true”和“false”不是布尔函数，在JavaScript中没有特殊含义
  
-11、JavaScript中有很多比较运算符。所有这些操作符返回一个布尔true或false值。
+* 11、JavaScript中有很多比较运算符。所有这些操作符返回一个布尔true或false值。
 最基本的运算符是等号运算符==。相等运算符比较两个值，如果它们相等或false，则返回true。注意，等式不同于赋值（=），它将操作符右边的值赋值给左边的变量。
-    function equalityTest(myVal) {
+  
+```js
+  function equalityTest(myVal) {
            if (myVal == 10) {
             return "Equal";
                         }
           return "Not Equal";
     }
+ ```
  
-12、严格相等（= =）是相等运算符（=）的对应。与相等运算符不同，严格相等测试比较元素的数据类型和值
+* 12、严格相等（= =）是相等运算符（=）的对应。与相等运算符不同，严格相等测试比较元素的数据类型和值
+
+```js
 function testStrict(val) {
   if (val===7) { // Change this line
     return "Equal";
   }
   return "Not Equal";
 }
+```
