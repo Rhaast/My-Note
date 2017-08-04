@@ -13,10 +13,11 @@
     var myArray = [["John",23],["cat",2]];
     var removedFromMyArray =myArray.pop();
  ```
-* 删除数组中第一个函数的功能，用.shift()
+* 3、删除数组中第一个函数的功能，用.shift()
+```js
     var myArray = [["John", 23], ["dog", 3]];
     var removedFromMyArray = myArray.shift();
- 
+ ```
 4、.unshift()功能可以配合.shift()使用，用于添加被删除的第一个元素。
     var ourArray = ["Stimpson", "J", "cat"];
     ourArray.shift(); // ourArray now equals ["J", "cat"]
