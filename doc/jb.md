@@ -18,11 +18,14 @@
     var myArray = [["John", 23], ["dog", 3]];
     var removedFromMyArray = myArray.shift();
  ```
-4、.unshift()功能可以配合.shift()使用，用于添加被删除的第一个元素。
-    var ourArray = ["Stimpson", "J", "cat"];
+* 4、.unshift()功能可以配合.shift()使用，用于添加被删除的第一个元素。
+
+```js
+  var ourArray = ["Stimpson", "J", "cat"];
     ourArray.shift(); // ourArray now equals ["J", "cat"]
     ourArray.unshift("Happy"); 
     // ourArray now equals ["Happy", "J", "cat"]
+ ```
  
 5、创建多维数组，每个子数组中的第一个元素应该包含一个带有名称的字符串。第二个元素应该是代表数量的数字。
     var myList = [["phone",1],
