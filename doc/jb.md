@@ -1,6 +1,6 @@
 ## javascirpt basic
 
-* 对一个数组末尾追加数据的简便方法是通过push()功能。
+* 1、对一个数组末尾追加数据的简便方法是通过push()功能。
 ```js  
   var arr = [1,2,3];
     arr.push(4);
