@@ -97,14 +97,18 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a
 
 加密后除了有混淆的作用外，有些代码被加密了，进一步提高了阅读的难度。
 
-（4）经过混淆&加密后的代码如下
+* （4）经过混淆&加密后的代码如下
 
-1 eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)d[e(c)]=k[c]||e(c);k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1;};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p;}('4 i(d,e){5 f=d;6.8=f;6.p=4(){3(e)};6.s=4(){t(5 g=0;g<y;g++){G.F=g}};6.7=h 7();4 l(){3("l");x((/\\{\\d+\\}/).v("a\\u{2}j"))3("{\\\\d} w r!")}};i.o.k=4(){3("k");a.7.m();5 n=4(e){6.j=e;6.8=4(){3(6.j)}};5 d=h n(1);d.8()};4 7(){3(\'7\')};7.o.m=4(){3("E")};5 a=h i(A,"z"),b=h i(0,"B");D("a.8=C");a.p();b.k();3(a.8);5 c=9;4 q(){5 d=0;3(d)};q();3(c);',43,43,'|||alert|function|var|this|yy|aa|||||||||new|xx|ab|dd|xxf|ll|fnx|prototype|bb|kk|match|cc|for|sdf|test|is|if|10|hello|100|ttyp|20|eval|yyll|title|document'.split('|'),0,{}))
-3.浏览器是怎么解析混淆和加密后的js代码的
+```js
+eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)d[e(c)]=k[c]||e(c);k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1;};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p;}('4 i(d,e){5 f=d;6.8=f;6.p=4(){3(e)};6.s=4(){t(5 g=0;g<y;g++){G.F=g}};6.7=h 7();4 l(){3("l");x((/\\{\\d+\\}/).v("a\\u{2}j"))3("{\\\\d} w r!")}};i.o.k=4(){3("k");a.7.m();5 n=4(e){6.j=e;6.8=4(){3(6.j)}};5 d=h n(1);d.8()};4 7(){3(\'7\')};7.o.m=4(){3("E")};5 a=h i(A,"z"),b=h i(0,"B");D("a.8=C");a.p();b.k();3(a.8);5 c=9;4 q(){5 d=0;3(d)};q();3(c);',43,43,'|||alert|function|var|this|yy|aa|||||||||new|xx|ab|dd|xxf|ll|fnx|prototype|bb|kk|match|cc|for|sdf|test|is|if|10|hello|100|ttyp|20|eval|yyll|title|document'.split('|'),0,{}))
+```
+
+* 3.浏览器是怎么解析混淆和加密后的js代码的
 
 其实变量名只要是Unicode字符就行了，对于js引擎来说都是一样的，只是人类觉得他们不同而已。
 
-4.js压缩工具
+* 4.js压缩工具  
+
 在线代码格式化:
 http://jsbeautifier.org/
 
