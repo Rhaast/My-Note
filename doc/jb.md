@@ -1,76 +1,104 @@
 ## javascirpt basic
 
-* ¶ÔÒ»¸öÊý×éÄ©Î²×·¼ÓÊý¾ÝµÄ¼ò±ã·½·¨ÊÇÍ¨¹ýpush()¹¦ÄÜ¡£
+* å¯¹ä¸€ä¸ªæ•°ç»„æœ«å°¾è¿½åŠ æ•°æ®çš„ç®€ä¾¿æ–¹æ³•æ˜¯é€šè¿‡push()åŠŸèƒ½ã€‚
 ```js  
   var arr = [1,2,3];
     arr.push(4);
     //arr is now [1,2,3,4].
 ```
  
-* É¾³ýÊý×éÖÐ×îºóÒ»¸öº¯ÊýµÄ¹¦ÄÜ£¬ÓÃ.pop()
+* 2ã€åˆ é™¤æ•°ç»„ä¸­æœ€åŽä¸€ä¸ªå‡½æ•°çš„åŠŸèƒ½ï¼Œç”¨.pop()
+
+```js
     var myArray = [["John",23],["cat",2]];
     var removedFromMyArray =myArray.pop();
-    
-3¡¢É¾³ýÊý×éÖÐµÚÒ»¸öº¯ÊýµÄ¹¦ÄÜ£¬ÓÃ.shift()
+ ```
+* 3ã€åˆ é™¤æ•°ç»„ä¸­ç¬¬ä¸€ä¸ªå‡½æ•°çš„åŠŸèƒ½ï¼Œç”¨.shift()
+```js
     var myArray = [["John", 23], ["dog", 3]];
     var removedFromMyArray = myArray.shift();
- 
-4¡¢.unshift()¹¦ÄÜ¿ÉÒÔÅäºÏ.shift()Ê¹ÓÃ£¬ÓÃÓÚÌí¼Ó±»É¾³ýµÄµÚÒ»¸öÔªËØ¡£
-    var ourArray = ["Stimpson", "J", "cat"];
+ ```
+* 4ã€.unshift()åŠŸèƒ½å¯ä»¥é…åˆ.shift()ä½¿ç”¨ï¼Œç”¨äºŽæ·»åŠ è¢«åˆ é™¤çš„ç¬¬ä¸€ä¸ªå…ƒç´ ã€‚
+
+```js
+  var ourArray = ["Stimpson", "J", "cat"];
     ourArray.shift(); // ourArray now equals ["J", "cat"]
     ourArray.unshift("Happy"); 
     // ourArray now equals ["Happy", "J", "cat"]
+ ```
  
-5¡¢´´½¨¶àÎ¬Êý×é£¬Ã¿¸ö×ÓÊý×éÖÐµÄµÚÒ»¸öÔªËØÓ¦¸Ã°üº¬Ò»¸ö´øÓÐÃû³ÆµÄ×Ö·û´®¡£µÚ¶þ¸öÔªËØÓ¦¸ÃÊÇ´ú±íÊýÁ¿µÄÊý×Ö¡£
-    var myList = [["phone",1],
+* 5ã€åˆ›å»ºå¤šç»´æ•°ç»„ï¼Œæ¯ä¸ªå­æ•°ç»„ä¸­çš„ç¬¬ä¸€ä¸ªå…ƒç´ åº”è¯¥åŒ…å«ä¸€ä¸ªå¸¦æœ‰åç§°çš„å­—ç¬¦ä¸²ã€‚ç¬¬äºŒä¸ªå…ƒç´ åº”è¯¥æ˜¯ä»£è¡¨æ•°é‡çš„æ•°å­—ã€‚
+  
+```js
+  var myList = [["phone",1],
              ["computer",2],
              ["kindle",3],
              ["ipad",4],
              ["swatch",5]];
-             
-6¡¢ÔÚJavaScriptÖÐ£¬ÎÒÃÇ¿ÉÒÔ½«´úÂë»®·ÖÎª¿ÉÖØÓÃµÄ²¿·Ö£¬³ÆÎªº¯Êý¡£
-ÏÂÃæÊÇº¯ÊýµÄÒ»¸öÀý×Ó£º
-    function functionName() {
+```
+
+* 6ã€åœ¨JavaScriptä¸­ï¼Œæˆ‘ä»¬å¯ä»¥å°†ä»£ç åˆ’åˆ†ä¸ºå¯é‡ç”¨çš„éƒ¨åˆ†ï¼Œç§°ä¸ºå‡½æ•°ã€‚
+ä¸‹é¢æ˜¯å‡½æ•°çš„ä¸€ä¸ªä¾‹å­ï¼š
+  
+```js
+  function functionName() {
                         console.log("Hello World");
     }
+ ```
  
-7¡¢º¯ÊýÖÐÉùÃ÷µÄ±äÁ¿ÒÔ¼°º¯Êý²ÎÊý¶¼ÓÐ¾Ö²¿×÷ÓÃÓò¡£Ò²¾ÍÊÇËµ£¬ËüÃÇÖ»ÔÚÄÇ¸öº¯ÊýÖÐ¿É¼û¡£
-    function myTest() {
+* 7ã€å‡½æ•°ä¸­å£°æ˜Žçš„å˜é‡ä»¥åŠå‡½æ•°å‚æ•°éƒ½æœ‰å±€éƒ¨ä½œç”¨åŸŸã€‚ä¹Ÿå°±æ˜¯è¯´ï¼Œå®ƒä»¬åªåœ¨é‚£ä¸ªå‡½æ•°ä¸­å¯è§ã€‚
+  
+```js  
+  function myTest() {
                         var loc = "foo";
                         console.log(loc);
     }
     myTest(); // "foo"
     console.log(loc); // "undefined"
-    
-8¡¢¾ßÓÐÏàÍ¬Ãû³ÆµÄ±¾µØ±äÁ¿ºÍÈ«¾Ö±äÁ¿¶¼ÊÇ¿ÉÄÜµÄ¡£Ö´ÐÐ´Ë²Ù×÷Ê±£¬±¾µØ±äÁ¿ÓÅÏÈÓÚÈ«¾Ö±äÁ¿¡£
-   var someVar = "Hat";
+ ```
+ 
+* 8ã€å…·æœ‰ç›¸åŒåç§°çš„æœ¬åœ°å˜é‡å’Œå…¨å±€å˜é‡éƒ½æ˜¯å¯èƒ½çš„ã€‚æ‰§è¡Œæ­¤æ“ä½œæ—¶ï¼Œæœ¬åœ°å˜é‡ä¼˜å…ˆäºŽå…¨å±€å˜é‡ã€‚
+  
+```js
+  var someVar = "Hat";
    function myFun() {
    var someVar = "Head";
    return someVar;
 }
-9¡¢ÎÒÃÇ¿ÉÒÔ½«Öµ´«µÝµ½´ø²ÎÊýµÄº¯ÊýÖÐ¡£¿ÉÒÔÊ¹ÓÃ·µ»ØÓï¾ä½«Öµ´Óº¯ÊýÖÐ´«»Ø¡£
-    function plusThree(num) {
+```
+
+* 9ã€æˆ‘ä»¬å¯ä»¥å°†å€¼ä¼ é€’åˆ°å¸¦å‚æ•°çš„å‡½æ•°ä¸­ã€‚å¯ä»¥ä½¿ç”¨è¿”å›žè¯­å¥å°†å€¼ä»Žå‡½æ•°ä¸­ä¼ å›žã€‚
+  
+```js  
+  function plusThree(num) {
       return num + 3;
     }
     var answer = plusThree(5); // 8
-    
-10¡¢ÁíÒ»ÖÖÊý¾ÝÀàÐÍÊÇ²¼¶ûÐÍ¡£²¼¶ûÖµ¿ÉÄÜÖ»ÓÐÁ½¸öÖµ£ºtrue»òfalse¡£ËüÃÇ»ù±¾ÉÏ¶¼ÊÇÐ¡¿ª¹Ø£¬ÆäÖÐµÄÕæÊÇ¡°¿ª¡±£¬¼ÙÊÇ¡°OFF¡±£¬ÕâÁ½ÖÖ×´Ì¬ÊÇ»¥³âµÄ¡£
-×¢£º
-²¼¶ûÖµ´Ó²»ÓÃÒýºÅÐ´¡£×Ö·û´®¡°true¡±ºÍ¡°false¡±²»ÊÇ²¼¶ûº¯Êý£¬ÔÚJavaScriptÖÐÃ»ÓÐÌØÊâº¬Òå
+```
+
+* 10ã€å¦ä¸€ç§æ•°æ®ç±»åž‹æ˜¯å¸ƒå°”åž‹ã€‚å¸ƒå°”å€¼å¯èƒ½åªæœ‰ä¸¤ä¸ªå€¼ï¼štrueæˆ–falseã€‚å®ƒä»¬åŸºæœ¬ä¸Šéƒ½æ˜¯å°å¼€å…³ï¼Œå…¶ä¸­çš„çœŸæ˜¯â€œå¼€â€ï¼Œå‡æ˜¯â€œOFFâ€ï¼Œè¿™ä¸¤ç§çŠ¶æ€æ˜¯äº’æ–¥çš„ã€‚
+æ³¨ï¼š
+å¸ƒå°”å€¼ä»Žä¸ç”¨å¼•å·å†™ã€‚å­—ç¬¦ä¸²â€œtrueâ€å’Œâ€œfalseâ€ä¸æ˜¯å¸ƒå°”å‡½æ•°ï¼Œåœ¨JavaScriptä¸­æ²¡æœ‰ç‰¹æ®Šå«ä¹‰
  
-11¡¢JavaScriptÖÐÓÐºÜ¶à±È½ÏÔËËã·û¡£ËùÓÐÕâÐ©²Ù×÷·û·µ»ØÒ»¸ö²¼¶ûtrue»òfalseÖµ¡£
-×î»ù±¾µÄÔËËã·ûÊÇµÈºÅÔËËã·û==¡£ÏàµÈÔËËã·û±È½ÏÁ½¸öÖµ£¬Èç¹ûËüÃÇÏàµÈ»òfalse£¬Ôò·µ»Øtrue¡£×¢Òâ£¬µÈÊ½²»Í¬ÓÚ¸³Öµ£¨=£©£¬Ëü½«²Ù×÷·ûÓÒ±ßµÄÖµ¸³Öµ¸ø×ó±ßµÄ±äÁ¿¡£
-    function equalityTest(myVal) {
+* 11ã€JavaScriptä¸­æœ‰å¾ˆå¤šæ¯”è¾ƒè¿ç®—ç¬¦ã€‚æ‰€æœ‰è¿™äº›æ“ä½œç¬¦è¿”å›žä¸€ä¸ªå¸ƒå°”trueæˆ–falseå€¼ã€‚
+æœ€åŸºæœ¬çš„è¿ç®—ç¬¦æ˜¯ç­‰å·è¿ç®—ç¬¦==ã€‚ç›¸ç­‰è¿ç®—ç¬¦æ¯”è¾ƒä¸¤ä¸ªå€¼ï¼Œå¦‚æžœå®ƒä»¬ç›¸ç­‰æˆ–falseï¼Œåˆ™è¿”å›žtrueã€‚æ³¨æ„ï¼Œç­‰å¼ä¸åŒäºŽèµ‹å€¼ï¼ˆ=ï¼‰ï¼Œå®ƒå°†æ“ä½œç¬¦å³è¾¹çš„å€¼èµ‹å€¼ç»™å·¦è¾¹çš„å˜é‡ã€‚
+  
+```js
+  function equalityTest(myVal) {
            if (myVal == 10) {
             return "Equal";
                         }
           return "Not Equal";
     }
+ ```
  
-12¡¢ÑÏ¸ñÏàµÈ£¨= =£©ÊÇÏàµÈÔËËã·û£¨=£©µÄ¶ÔÓ¦¡£ÓëÏàµÈÔËËã·û²»Í¬£¬ÑÏ¸ñÏàµÈ²âÊÔ±È½ÏÔªËØµÄÊý¾ÝÀàÐÍºÍÖµ
+* 12ã€ä¸¥æ ¼ç›¸ç­‰ï¼ˆ= =ï¼‰æ˜¯ç›¸ç­‰è¿ç®—ç¬¦ï¼ˆ=ï¼‰çš„å¯¹åº”ã€‚ä¸Žç›¸ç­‰è¿ç®—ç¬¦ä¸åŒï¼Œä¸¥æ ¼ç›¸ç­‰æµ‹è¯•æ¯”è¾ƒå…ƒç´ çš„æ•°æ®ç±»åž‹å’Œå€¼
+
+```js
 function testStrict(val) {
   if (val===7) { // Change this line
     return "Equal";
   }
   return "Not Equal";
 }
+```
