@@ -155,3 +155,64 @@ if (num > 10 || num < 5) {
 }
 return "Yes";
 ```
+* 17、如果有许多选项可供选择，请使用开关语句。开关语句测试一个值，可以有许多case语句，它定义了各种可能的值。语句从第一个匹配的case值执行，直到遇到中断。
+
+```js
+function caseInSwitch(val) {
+var answer = "";
+// Only change code below this line
+switch (val){
+case 1:
+answer = "alpha";
+break;
+case 2:
+answer = "beta";
+break;
+case 3:
+answer = "gamma";
+break;
+case 4:
+answer = "delta";
+break;
+}
+
+// Only change code above this line
+return answer;
+}
+
+// Change this value to test
+caseInSwitch(1);
+```
+* 18、在转换语句中，您可能无法指定所有可能的值作为case语句。相反，您可以添加默认语句，如果没有匹配的case语句，则将执行该语句。将其视为if / if链中的最后一条语句。默认语句应该是最后一个例子。
+```js
+function switchOfStuff(val) {
+  var answer = "";
+  // Only change code below this line
+  switch(val){
+    case "a":
+      answer ="apple"; 
+      break;
+      
+    case "b":
+      answer="bird"; 
+      break;
+      
+    case "c":
+      answer="cat"; 
+      break;
+      
+    default:
+      answer="stuff"; 
+      break;
+      
+  }
+  
+  
+  // Only change code above this line  
+  return answer;  
+}
+
+// Change this value to test
+switchOfStuff(1);
+
+```
