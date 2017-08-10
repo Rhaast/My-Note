@@ -102,3 +102,56 @@ function testStrict(val) {
   return "Not Equal";
 }
 ```
+
+* 13、不等式运算符（！=）与相等运算符相反。它的意思是“不相等”，在相等返回true时返回false，反之亦然。与相等运算符一样，不等式运算符将在比较时转换值的数据类型。
+
+```js
+1 != 2      // true
+1 != "1"    // false
+1 != '1'    // false
+1 != true   // false
+0 != false  // false
+```
+
+* 14、严格的不等式算子（！=）与严格相等运算符相反。它的意思是“严格不相等”，在严格相等返回true时返回false，反之亦然。严格的不等式不会转换数据类型。
+
+```js
+3 !== 3   // false
+3 !== '3' // true
+4 !== 3   // true
+```
+* 15、有时你需要一次测试不止一件事。逻辑和运算符（&&）返回true，当且仅当它的左、右操作数为真时才返回。
+如果将if语句嵌套在另一个语句中，则可以实现同样的效果：
+```js
+if (num > 5) {
+  if (num < 10) {
+    return "Yes";
+  }
+}
+return "No";
+```
+只返回“是”，如果数字介于6和9之间（包括6和9）。同样的逻辑可以写为：
+```js
+if (num > 5 && num < 10) {
+  return "Yes";
+}
+return "No";
+```
+* 16、逻辑或操作符（| |）返回true，如果操作数是真实的。否则，它返回false。
+```js
+if (num > 10) {
+  return "No";
+}
+if (num < 5) {
+  return "No";
+}
+return "Yes";
+```
+或者
+
+```js
+if (num > 10 || num < 5) {
+  return "No";
+}
+return "Yes";
+```
