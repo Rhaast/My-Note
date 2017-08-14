@@ -303,3 +303,135 @@ return answer;
 // Change this value to test
 chainToSwitch(7);
 ```
+* 21、有两种访问对象属性的方法：点运算符（.）和括号表示法（[]），类似于数组。点运算符是当您知道要提前访问的属性的名称时使用的运算符。下面是使用点运算符（.）读取对象属性的示例：
+
+```js
+var myObj = {
+  prop1: "val1",
+  prop2: "val2"
+};
+var prop1val = myObj.prop1; // val1
+var prop2val = myObj.prop2; // val2
+```
+* 22、访问对象属性的第二种方法是括号表示法（[]）。如果要访问的对象的属性有一个空格，则需要使用括号表示法。
+下面是使用括号符号读取对象属性的示例：
+
+```js
+var myObj = {
+  "Space Name": "Kirk",
+  "More Space": "Spock"
+};
+myObj["Space Name"]; // Kirk
+myObj['More Space']; // Spock
+```
+* 23、括号对对象的另一种用法是使用变量访问属性。这对于遍历对象属性列表或进行查找非常有用。
+下面是一个使用变量访问属性的示例：
+```js
+var someProp = "propName";
+var myObj = {
+  propName: "Some Value"
+}
+myObj[someProp]; // "Some Value"
+```
+或者
+```js
+var myDog = "Hunter";
+var dogs = {
+  Fido: "Mutt",
+  Hunter: "Doberman",
+  Snoopie: "Beagle"
+}
+var breed = dogs[myDog];
+console.log(breed);// "Doberman"
+```
+* 24、创建JavaScript对象之后，可以随时更新属性，就像更新任何其他变量一样。可以使用点或括号符号来更新。
+
+```js
+var ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"]
+};
+ourDog.name = "Happy Camper"; or
+
+ourDog["name"] = "Happy Camper";
+
+* 25、我们也可以从像这样的对象中删除属性：
+```js
+var myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["Free Code Camp Campers"],
+  "bark": "woof"
+};
+delete myDog.tails;
+```
+
+* 26、有时检查给定对象的属性是否存在是有用的。我们可以使用.hasownproperty（propname）方法的对象是否具有特定对象的属性名称。.hasownproperty()返回TRUE或FALSE如果属性被发现或不。
+```js
+var myObj = {
+gift: "pony",
+pet: "kitten",
+bed: "sleigh"
+};
+
+function checkObj(checkProp) {
+// Your Code Here
+if (myObj.hasOwnProperty(checkProp)) {
+return myObj[checkProp];
+} else {
+return "Not Found";
+}
+
+}
+
+// Test your code by modifying these values
+checkObj("gift");
+```
+
+* 27、通过将点或括号符号链接在一起，可以访问对象的子属性。
+```js
+var myStorage = {
+  "car": {
+    "inside": {
+      "glove box": "maps",
+      "passenger seat": "crumbs"
+     },
+    "outside": {
+      "trunk": "jack"
+    }
+  }
+};
+
+// Only change code below this line
+
+var gloveBoxContents = myStorage.car.inside["glove box"]; // Change this line
+```
+
+* 28、正如我们在前面的例子中所看到的，对象可以同时包含嵌套对象和嵌套数组。类似于访问嵌套对象，数组括号符号可以链接到访问嵌套数组。
+
+```js
+var ourPets = [
+  {
+    animalType: "cat",
+    names: [
+      "Meowzer",
+      "Fluffy",
+      "Kit-Cat"
+    ]
+  },
+  {
+    animalType: "dog",
+    names: [
+      "Spot",
+      "Bowser",
+      "Frankie"
+    ]
+  }
+];
+ourPets[0].names[1]; // "Fluffy"
+ourPets[1].names[0]; // "Spot"
+Instructions
+```
