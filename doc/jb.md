@@ -435,3 +435,51 @@ ourPets[0].names[1]; // "Fluffy"
 ourPets[1].names[0]; // "Spot"
 Instructions
 ```
+* 29、如果你有一个多维数组，可以用相同的逻辑作为先验点遍历的数组和任何子阵列。下面是一个例子：
+```js
+var arr = [
+  [1,2], [3,4], [5,6]
+];
+for (var i=0; i < arr.length; i++) {
+  for (var j=0; j < arr[i].length; j++) {
+    console.log(arr[i][j]);
+  }
+}
+```
+* 30、for循环语句也可以用while语句迭代。
+、、、js
+var ourArray = [];
+
+for (var i = 0; i < 5; i++) {
+  ourArray.push(i);
+}
+```
+可替换成
+```js
+var ourArray = [];
+var i = 0;
+while(i < 5) {
+  ourArray.push(i);
+  i++;
+}
+```
+* 31、正则表达式用于在字符串内部查找特定的单词或模式。例如，如果我们想找到字符串中的单词“狗追赶猫”，我们可以使用以下正则表达式：让我们把这个细分一点：/是正则表达式的开始。这是我们想要匹配的模式。/是正则表达式的结束。G是全局的，它使模式返回字符串中的所有匹配，而不仅仅是第一个字符串。i的意思是，在搜索模式时，我们要忽略大小写（大写或小写）。
+```js
+// Setup
+var testString = "Ada Lovelace and Charles Babbage designed the first computer and the software that would have run on it.";
+
+// Example
+var expressionToGetSoftware = /software/gi;
+var softwareCount = testString.match(expressionToGetSoftware).length;
+  
+
+// Only change code below this line.
+
+var expression = /and/gi;  // Change this Line
+
+// Only change code above this line
+
+// This code counts the matches of expression in testString
+var andCount = testString.match(expression).length;
+```
+* 32、
